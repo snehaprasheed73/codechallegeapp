@@ -15,6 +15,9 @@
 		2054C5E320802D1100F507D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C5E220802D1100F507D3 /* main.m */; };
 		2054C5ED20802D1200F507D3 /* codechallegeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C5EC20802D1200F507D3 /* codechallegeTests.m */; };
 		2054C5F820802D1200F507D3 /* codechallegeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C5F720802D1200F507D3 /* codechallegeUITests.m */; };
+		20AFA62C20805A7700742295 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AFA62B20805A7700742295 /* SecondViewController.m */; };
+		20AFA6302080693500742295 /* Backblue-100@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20AFA62F2080693400742295 /* Backblue-100@2x.png */; };
+		20AFA6322080747400742295 /* usericon_id76rb.png in Resources */ = {isa = PBXBuildFile; fileRef = 20AFA6312080747400742295 /* usericon_id76rb.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		2054C5F320802D1200F507D3 /* codechallegeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = codechallegeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2054C5F720802D1200F507D3 /* codechallegeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = codechallegeUITests.m; sourceTree = "<group>"; };
 		2054C5F920802D1200F507D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20AFA62A20805A7700742295 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		20AFA62B20805A7700742295 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = ../../SecondViewController.m; sourceTree = "<group>"; };
+		20AFA62F2080693400742295 /* Backblue-100@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Backblue-100@2x.png"; sourceTree = "<group>"; };
+		20AFA6312080747400742295 /* usericon_id76rb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usericon_id76rb.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +110,8 @@
 			children = (
 				2054C5D320802D1100F507D3 /* AppDelegate.h */,
 				2054C5D420802D1100F507D3 /* AppDelegate.m */,
-				2054C5D620802D1100F507D3 /* ViewController.h */,
-				2054C5D720802D1100F507D3 /* ViewController.m */,
+				2054C60520802EDE00F507D3 /* controllers */,
+				20AFA6352081189B00742295 /* images */,
 				2054C5D920802D1100F507D3 /* Main.storyboard */,
 				2054C5DC20802D1100F507D3 /* Assets.xcassets */,
 				2054C5DE20802D1100F507D3 /* LaunchScreen.storyboard */,
@@ -130,6 +137,26 @@
 				2054C5F920802D1200F507D3 /* Info.plist */,
 			);
 			path = codechallegeUITests;
+			sourceTree = "<group>";
+		};
+		2054C60520802EDE00F507D3 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2054C5D620802D1100F507D3 /* ViewController.h */,
+				2054C5D720802D1100F507D3 /* ViewController.m */,
+				20AFA62A20805A7700742295 /* SecondViewController.h */,
+				20AFA62B20805A7700742295 /* SecondViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		20AFA6352081189B00742295 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				20AFA62F2080693400742295 /* Backblue-100@2x.png */,
+				20AFA6312080747400742295 /* usericon_id76rb.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +265,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20AFA6302080693500742295 /* Backblue-100@2x.png in Resources */,
 				2054C5E020802D1100F507D3 /* LaunchScreen.storyboard in Resources */,
 				2054C5DD20802D1100F507D3 /* Assets.xcassets in Resources */,
 				2054C5DB20802D1100F507D3 /* Main.storyboard in Resources */,
+				20AFA6322080747400742295 /* usericon_id76rb.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20AFA62C20805A7700742295 /* SecondViewController.m in Sources */,
 				2054C5D820802D1100F507D3 /* ViewController.m in Sources */,
 				2054C5E320802D1100F507D3 /* main.m in Sources */,
 				2054C5D520802D1100F507D3 /* AppDelegate.m in Sources */,
@@ -430,11 +460,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = codechallege/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sneha.button.codechallege;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -443,11 +476,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = codechallege/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sneha.button.codechallege;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

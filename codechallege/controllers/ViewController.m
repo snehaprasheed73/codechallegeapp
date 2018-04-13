@@ -40,7 +40,7 @@
 -(void)textFieldDidBeginEditing:(UITextField *)textField
 {
   //make view position up
-    CGRect frame=CGRectMake(0,-80,320,568);
+    CGRect frame=CGRectMake(0,-80,self.view.frame.size.width,self.view.frame.size.height);
     [UIView animateWithDuration:0.3 animations:^{self.view.frame = frame;}];
 }
 

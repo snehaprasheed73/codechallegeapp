@@ -36,13 +36,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhe-xL-QNq">
-                                <rect key="frame" x="163" y="351" width="49" height="30"/>
+                                <rect key="frame" x="163" y="348" width="49" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="49" id="1Al-Na-CME"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="BAF-lT-xCC"/>
-                                    <constraint firstAttribute="height" constant="30" id="KEy-FG-R2W"/>
-                                    <constraint firstAttribute="width" constant="49" id="btO-FP-scw"/>
+                                    <constraint firstAttribute="height" constant="40" id="0zi-MP-n7d"/>
                                 </constraints>
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -54,14 +51,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.75333954015544036" green="0.75333954015544036" blue="0.75333954015544036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Jhe-xL-QNq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="45S-IG-Fo9"/>
+                            <constraint firstItem="Jhe-xL-QNq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AhU-wK-NcQ"/>
                             <constraint firstItem="107-PO-Vw3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="CRj-dY-i7b"/>
                             <constraint firstItem="107-PO-Vw3" firstAttribute="top" secondItem="a1E-eU-48k" secondAttribute="bottom" constant="31" id="EbL-Eo-gIG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a1E-eU-48k" secondAttribute="trailing" constant="68" id="RXZ-4e-F1A"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="107-PO-Vw3" secondAttribute="trailing" constant="68" id="UaU-Py-IO4"/>
                             <constraint firstItem="a1E-eU-48k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="UyL-D6-o6z"/>
-                            <constraint firstItem="Jhe-xL-QNq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V9Q-0f-Qq3"/>
-                            <constraint firstItem="Jhe-xL-QNq" firstAttribute="top" secondItem="107-PO-Vw3" secondAttribute="bottom" constant="43" id="uzT-Qt-Hsn"/>
+                            <constraint firstItem="Jhe-xL-QNq" firstAttribute="top" secondItem="107-PO-Vw3" secondAttribute="bottom" constant="40" id="mnn-Up-BAd"/>
                             <constraint firstItem="a1E-eU-48k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="197" id="z5o-jr-4uL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -70,12 +66,12 @@
                         <outlet property="PasswordTextfield" destination="107-PO-Vw3" id="XuN-RK-rdV"/>
                         <outlet property="SubmitButton" destination="Jhe-xL-QNq" id="bGS-mt-VJy"/>
                         <outlet property="UsernameTextfield" destination="a1E-eU-48k" id="2Hg-Mr-w1g"/>
-                        <segue destination="feT-kq-EzD" kind="modal" identifier="segueidentifier" id="Dow-tZ-paC"/>
+                        <segue destination="feT-kq-EzD" kind="presentation" identifier="segueidentifier" id="Dow-tZ-paC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="410" y="111"/>
+            <point key="canvasLocation" x="408.5" y="109.5"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="kwp-f6-NUZ">
